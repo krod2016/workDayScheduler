@@ -1,6 +1,6 @@
-// A function that displays the current day of the week and current date at the top of the page using moment.js.
+//Displays date
 $(document).ready(function() {
-  var now = moment().format("dddd, MMMM Do YYYY");
+  var now = moment().format("dddd, MMMM DD YYYY");
   $("#currentDate").html(now);
 });
 
@@ -8,7 +8,7 @@ $(document).ready(function() {
 var hour = moment().format("H"); 
 var currentHour = parseInt(hour);
 
-// Created an array from the rows ("time blocks") in order to loop through them to make changes to the background color.
+//allows background color to change 
 $(".row").toArray().forEach(row => {
   var timeBlockRow = row.id, rowHour;
   if (timeBlockRow) {
