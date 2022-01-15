@@ -31,7 +31,35 @@ function setColor(element, color) {
   element.style.backgroundColor = color;
 };
 
-// A "click" function was created for the save button so that the tasks that are inputted into the textarea for the 9 AM time slot can be pushed into the local storage as "9AM To Dos" and saved onto the DOM. Once saved, the page then returns to the index.html.
+//adding text to 8AM
+if(localStorage.getItem("8AMToDos") !="") {
+  $("#8AMEntry").val(localStorage.getItem("8AMToDos"));
+}
+
+$("#saveButton1").click(function () {
+  if (window.localStorage) {
+      localStorage.setItem("8AMToDos", $("#8AMEntry").val());
+      setTimeout(function() {
+      window.location.replace("index.html");
+  }); 
+}
+});
+
+//adding text to 830AM
+if(localStorage.getItem("830AMToDos") !="") {
+  $("#9AMEntry").val(localStorage.getItem("830AMToDos"));
+}
+
+$("#saveButton1").click(function () {
+  if (window.localStorage) {
+      localStorage.setItem("830AMToDos", $("#830AMEntry").val());
+      setTimeout(function() {
+      window.location.replace("index.html");
+  }); 
+}
+});
+
+//adding text to 9AM
 if(localStorage.getItem("9AMToDos") !="") {
   $("#9AMEntry").val(localStorage.getItem("9AMToDos"));
 }
@@ -45,7 +73,21 @@ $("#saveButton1").click(function () {
 }
 });
 
-// A "click" function was created for the save button so that the tasks that are inputted into the textarea for the 10 AM time slot can be pushed into the local storage as "10AM To Dos" and saved onto the DOM. Once saved, the page then returns to the index.html.
+//adding text to 930AM
+if(localStorage.getItem("930AMToDos") !="") {
+  $("#9AMEntry").val(localStorage.getItem("930AMToDos"));
+}
+
+$("#saveButton1").click(function () {
+  if (window.localStorage) {
+      localStorage.setItem("930AMToDos", $("#930AMEntry").val());
+      setTimeout(function() {
+      window.location.replace("index.html");
+  }); 
+}
+});
+
+// adding text to 10AM
 if(localStorage.getItem("10AMToDos") !="") {
   $("#10AMEntry").val(localStorage.getItem("10AMToDos"));
 }
