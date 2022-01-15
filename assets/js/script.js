@@ -14,7 +14,7 @@ $(".row").toArray().forEach(row => {
   if (timeBlockRow) {
       rowHour = parseInt(timeBlockRow);
   }
-// For the present hour time block, the background color is a dark pink. For the past time blocks, the background color is a light pink. For all future time blocks, the background color is green.
+//colors for past, present, and future times
   if (rowHour) {  
       if (currentHour === rowHour) {
           setColor(row, "Thistle");
@@ -26,7 +26,7 @@ $(".row").toArray().forEach(row => {
 }
 });
 
-// A function to change the background colors of time blocks dependent on the time of day.
+//allows to change color depending on time
 function setColor(element, color) {
   element.style.backgroundColor = color;
 };
