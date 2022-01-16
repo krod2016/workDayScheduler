@@ -1,9 +1,12 @@
 # Work Day Scheduler
 This website will allow users to manage a normal work day successfully. 
 
+# Links
+* GitHub: https://github.com/krod2016/workDayScheduler
+* Deployed: 
+
 # Description
 ![workDayScheduler-page](https://user-images.githubusercontent.com/88009884/149646074-e1a5dd6d-e991-4d78-be42-d91850663488.png)
-
 Here is a screenshot of the Scheduler. 
 
 # Technologies Used:
