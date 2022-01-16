@@ -36,7 +36,7 @@ if(localStorage.getItem("8AMToDos") !="") {
   $("#8AMEntry").val(localStorage.getItem("8AMToDos"));
 }
 
-$("#saveButton1").click(function () {
+$("#SaveButton1").click(function () {
   if (window.localStorage) {
       localStorage.setItem("8AMToDos", $("#8AMEntry").val());
       setTimeout(function() {
@@ -45,12 +45,12 @@ $("#saveButton1").click(function () {
 }
 });
 
-//adding text to 830AM: left off here
+//adding text to 830AM
 if(localStorage.getItem("830AMToDos") !="") {
-  $("#9AMEntry").val(localStorage.getItem("830AMToDos"));
+  $("#830AMEntry").val(localStorage.getItem("830AMToDos"));
 }
 
-$("#saveButton2").click(function () {
+$("#SaveButton2").click(function () {
   if (window.localStorage) {
       localStorage.setItem("830AMToDos", $("#830AMEntry").val());
       setTimeout(function() {
@@ -64,7 +64,7 @@ if(localStorage.getItem("9AMToDos") !="") {
   $("#9AMEntry").val(localStorage.getItem("9AMToDos"));
 }
 
-$("#saveButton3").click(function () {
+$("#SaveButton3").click(function () {
   if (window.localStorage) {
       localStorage.setItem("9AMToDos", $("#9AMEntry").val());
       setTimeout(function() {
@@ -75,10 +75,10 @@ $("#saveButton3").click(function () {
 
 //adding text to 930AM
 if(localStorage.getItem("930AMToDos") !="") {
-  $("#9AMEntry").val(localStorage.getItem("930AMToDos"));
+  $("#930AMEntry").val(localStorage.getItem("930AMToDos"));
 }
 
-$("#saveButton4").click(function () {
+$("#SaveButton4").click(function () {
   if (window.localStorage) {
       localStorage.setItem("930AMToDos", $("#930AMEntry").val());
       setTimeout(function() {
@@ -92,7 +92,7 @@ if(localStorage.getItem("10AMToDos") !="") {
   $("#10AMEntry").val(localStorage.getItem("10AMToDos"));
 }
 
-$("#saveButton2").click(function () {
+$("#SaveButton5").click(function () {
   if (window.localStorage) {
       localStorage.setItem("10AMToDos", $("#10AMEntry").val());
       setTimeout(function() {
@@ -101,12 +101,26 @@ $("#saveButton2").click(function () {
 }
 });
 
-// A "click" function was created for the save button so that the tasks that are inputted into the textarea for the 11 AM time slot can be pushed into the local storage as "11AM To Dos" and saved onto the DOM. Once saved, the page then returns to the index.html.
+//adding text to 10:30AM
+if(localStorage.getItem("1030AMToDos") !="") {
+  $("#1030AMEntry").val(localStorage.getItem("1030AMToDos"));
+}
+
+$("#SaveButton6").click(function () {
+  if (window.localStorage) {
+      localStorage.setItem("1030AMToDos", $("#1030AMEntry").val());
+      setTimeout(function() {
+      window.location.replace("index.html");
+  }); 
+}
+});
+
+//adding text to 11AM
 if(localStorage.getItem("11AMToDos") !="") {
   $("#11AMEntry").val(localStorage.getItem("11AMToDos"));
 }
 
-$("#saveButton3").click(function () {
+$("#SaveButton7").click(function () {
   if (window.localStorage) {
       localStorage.setItem("11AMToDos", $("#11AMEntry").val());
       setTimeout(function() {
@@ -115,12 +129,26 @@ $("#saveButton3").click(function () {
 }
 });
 
-// A "click" function was created for the save button so that the tasks that are inputted into the textarea for the 12 PM time slot can be pushed into the local storage as "12PM To Dos" and saved onto the DOM. Once saved, the page then returns to the index.html.
+// adding text to 11:30 AM
+if(localStorage.getItem("1130AMToDos") !="") {
+  $("#1130AMEntry").val(localStorage.getItem("1130AMToDos"));
+}
+
+$("#SaveButton8").click(function () {
+  if (window.localStorage) {
+      localStorage.setItem("1130AMToDos", $("#1130AMEntry").val());
+      setTimeout(function() {
+      window.location.replace("index.html");
+  }); 
+}
+});
+
+// adding text to 12 PM
 if(localStorage.getItem("12PMToDos") !="") {
   $("#12PMEntry").val(localStorage.getItem("12PMToDos"));
 }
 
-$("#saveButton4").click(function () {
+$("#SaveButton9").click(function () {
   if (window.localStorage) {
       localStorage.setItem("12PMToDos", $("#12PMEntry").val());
       setTimeout(function() {
@@ -129,14 +157,42 @@ $("#saveButton4").click(function () {
 }
 });
 
-// A "click" function was created for the save button so that the tasks that are inputted into the textarea for the 1 PM time slot can be pushed into the local storage as "1PM To Dos" and saved onto the DOM. Once saved, the page then returns to the index.html.
+// adding text to 12:30 PM
+if(localStorage.getItem("1230PMToDos") !="") {
+  $("#1230PMEntry").val(localStorage.getItem("1230PMToDos"));
+}
+
+$("#SaveButton10").click(function () {
+  if (window.localStorage) {
+      localStorage.setItem("1230PMToDos", $("#1230PMEntry").val());
+      setTimeout(function() {
+      window.location.replace("index.html");
+  }); 
+}
+});
+
+// adding text to 1 PM
 if(localStorage.getItem("1PMToDos") !="") {
   $("#1PMEntry").val(localStorage.getItem("1PMToDos"));
 }
 
-$("#saveButton5").click(function () {
+$("#SaveButton11").click(function () {
   if (window.localStorage) {
       localStorage.setItem("1PMToDos", $("#1PMEntry").val());
+      setTimeout(function() {
+      window.location.replace("index.html");
+  }); 
+}
+});
+
+// adding text to 1:30 PM
+if(localStorage.getItem("130PMToDos") !="") {
+  $("#130PMEntry").val(localStorage.getItem("130PMToDos"));
+}
+
+$("#SaveButton12").click(function () {
+  if (window.localStorage) {
+      localStorage.setItem("130PMToDos", $("#130PMEntry").val());
       setTimeout(function() {
       window.location.replace("index.html");
   }); 
@@ -148,7 +204,7 @@ if(localStorage.getItem("2PMToDos") !="") {
   $("#2PMEntry").val(localStorage.getItem("2PMToDos"));
 }
 
-$("#saveButton13").click(function () {
+$("#SaveButton13").click(function () {
   if (window.localStorage) {
       localStorage.setItem("2PMToDos", $("#2PMEntry").val());
       setTimeout(function() {
@@ -157,12 +213,26 @@ $("#saveButton13").click(function () {
 }
 });
 
-// A "click" function was created for the save button so that the tasks that are inputted into the textarea for the 3 PM time slot can be pushed into the local storage as "3PM To Dos" and saved onto the DOM. Once saved, the page then returns to the index.html.
+// adding text to 2:30 PM
+if(localStorage.getItem("230PMToDos") !="") {
+  $("#230PMEntry").val(localStorage.getItem("230PMToDos"));
+}
+
+$("#SaveButton14").click(function () {
+  if (window.localStorage) {
+      localStorage.setItem("230PMToDos", $("#230PMEntry").val());
+      setTimeout(function() {
+      window.location.replace("index.html");
+  }); 
+}
+});
+
+// adding text to 3PM
 if(localStorage.getItem("3PMToDos") !="") {
   $("#3PMEntry").val(localStorage.getItem("3PMToDos"));
 }
 
-$("#saveButton7").click(function () {
+$("#SaveButton15").click(function () {
   if (window.localStorage) {
       localStorage.setItem("3PMToDos", $("#3PMEntry").val());
       setTimeout(function() {
@@ -171,12 +241,26 @@ $("#saveButton7").click(function () {
 }
 });
 
-// A "click" function was created for the save button so that the tasks that are inputted into the textarea for the 4 PM time slot can be pushed into the local storage as "4PM To Dos" and saved onto the DOM. Once saved, the page then returns to the index.html.
+// adding text to 3:30 PM
+if(localStorage.getItem("330PMToDos") !="") {
+  $("#330PMEntry").val(localStorage.getItem("330PMToDos"));
+}
+
+$("#SaveButton16").click(function () {
+  if (window.localStorage) {
+      localStorage.setItem("330PMToDos", $("#330PMEntry").val());
+      setTimeout(function() {
+      window.location.replace("index.html");
+  }); 
+}
+});
+
+// adding text to 4PM
 if(localStorage.getItem("4PMToDos") !="") {
   $("#4PMEntry").val(localStorage.getItem("4PMToDos"));
 }
 
-$("#saveButton8").click(function () {
+$("#SaveButton17").click(function () {
   if (window.localStorage) {
       localStorage.setItem("4PMToDos", $("#4PMEntry").val());
       setTimeout(function() {
@@ -185,12 +269,26 @@ $("#saveButton8").click(function () {
 }
 });
 
-// A "click" function was created for the save button so that the tasks that are inputted into the textarea for the 5 PM time slot can be pushed into the local storage as "5PM To Dos" and saved onto the DOM. Once saved, the page then returns to the index.html.
+// adding text to 4:30 PM
+if(localStorage.getItem("430PMToDos") !="") {
+  $("#430PMEntry").val(localStorage.getItem("430PMToDos"));
+}
+
+$("#SaveButton18").click(function () {
+  if (window.localStorage) {
+      localStorage.setItem("430PMToDos", $("#430PMEntry").val());
+      setTimeout(function() {
+      window.location.replace("index.html");
+  }); 
+}
+});
+
+// adding text to 5PM
 if(localStorage.getItem("5PMToDos") !="") {
   $("#5PMEntry").val(localStorage.getItem("5PMToDos"));
 }
 
-$("#saveButton9").click(function () {
+$("#SaveButton19").click(function () {
   if (window.localStorage) {
       localStorage.setItem("5PMToDos", $("#5PMEntry").val());
       setTimeout(function() {
